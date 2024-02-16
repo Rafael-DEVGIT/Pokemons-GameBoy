@@ -388,8 +388,7 @@ nav ul a:hover {
 
 
 .detonado-div {
-    background-image: url(.../Conteudos/pokemon\ detonados\ wallpaper.png);
-    background-image: url(/Conteudos/pokemon\ detonados\ wallpaper.png);
+    background-image: url(../Conteudos/pokemon\ detonados\ wallpaper.png);
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -486,6 +485,7 @@ nav ul a:hover {
 
 /* END 2*/
 .end {
+    font-size: 13px;
     display: grid;
     grid-template-columns: 1fr ;
     text-align: center;
