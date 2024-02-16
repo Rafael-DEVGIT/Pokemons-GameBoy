@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+/* NAVBAR  */
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 15px 30px;
+    background: #000000;
+    
+}
+.logo img {
+    width: 150px;
+    height: 45px;
+    margin-top: 5px;
+}
+
+.menu {display: flex;}
+.menu li {padding-left: 50px;}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: #d8d8d8;
+}
+
+nav ul a {
+  color: #ffffff;
+  font-size:  20px;
+  font-weight: bolder;
+}
+
+nav ul a:hover {
+  color: red;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.menu li a:hover {
+    color: red;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #ffffff;
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+    color: #ffffff;
+}
+
+#check {display: none;}
+
+
+/* SLIDE */
+
+.containerproje{
+    position: relative;
+}
+
+.containerproje .slide-container .slide{
+    min-height: 650px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    margin-top: -0px;
+}
+
+
+
+.containerproje .slide-container .slide .contentproje{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+    border-radius: 5px;
+    flex:1 1 650px;
+    background-color: #000000b4;
+    animation: slideContent .4s linear .4s backwards;
+}
+
+.containerproje .slide-container .slide .contentproje .gameplay {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.containerproje .slide-container .slide .contentproje img {
+    width: 600px;
+    height: 310px;
+    border-radius: 1px;
+}
+
+@keyframes slideContent{0%
+{
+    opacity: 0;
+    transform: translateX(-50px);
+}
+}
+
+
+.containerproje .slide-container .slide .contentproje h3{
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'poppins';
+
+
+}
+
+.containerproje .slide-container .slide .contentproje p{
+    padding: 10px;
+    font-size: 23px;
+    line-height: 33px;
+    color: #f8f8f8;
+    font-family: 'Noto Sans', sans-serif;
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+}
+
+
+
+.containerproje .slide-container .slide .contentproje .bntproj{
+    margin-top: 20px;
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 9px 40px;
+    border-radius: 5px;
+    border: 2px solid yellow;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+}
+
+.containerproje .slide-container .slide .contentproje .bntproj:hover{
+    background: #ff0000;
+    border: 2px solid yellow;
+    color: #ffffff;
+}
+
+.containerproje .slide-container{
+    display: none;
+}
+
+.containerproje .slide-container.active{
+    display: block;
+}
+
+.containerproje .slide-container:nth-child(1) .slide{
+    background: url(/Conteudos/fire\ red.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+}
+
+.containerproje .slide-container:nth-child(2) .slide{
+    background: url(/Conteudos/leaf\ gren.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+}
+
+.containerproje .slide-container:nth-child(3) .slide{
+    background: url(/Conteudos/Ruby.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+}
+
+.containerproje .slide-container:nth-child(4) .slide{
+    background: url(/Conteudos/Saphira.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+}
+
+.containerproje .slide-container:nth-child(5) .slide{
+    background: url(/Conteudos/esmeralda.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+}
+
+.containerproje #prev, 
+.containerproje #next {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    background: #000000;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+.containerproje #prev:hover, 
+.containerproje #next:hover{
+    background: #4079c4;
+}
+.containerproje #prev{
+    left: 20px;
+}
+
+.containerproje #next{
+    right: 20px;
+}
+
+.emu-titulo {
+    background-color: #000000c9;
+    color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.emu-titulo h1 {
+    margin-bottom: 10px;
+}
+
+.emu-titulo h1::after{
+    content: '';
+    width: 450px;
+    height: 3px;
+    background-color: #ffffff;
+    display: block;
+}
+
+
+
+.emuladores-div {
+    background-image: url(/Conteudos/emulador\ img.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 780px;
+    padding: 40px;
+}
+
+.emuladores-div .emuladores {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.emuladores-div .emuladores div {
+    padding: 5px;
+    background-color: #000000cb;
+    border-radius: 10px;
+    color: #ffffff;
+    height: 408px;
+}
+
+.emuladores-div .emuladores div p {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+.emuladores-div .emuladores img {
+    width: 100%;
+    height: 190px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.emuladores-div .emuladores div a {
+   background-color: #000000;
+   color: #ffffff;
+   border-radius: 5px;
+   padding: 8px;
+   border: 2px solid yellow;
+}
+
+.emuladores-div .emuladores div a:hover{
+    background-color: #ff0000;
+}
+.roms-gba {
+    width: 100%;
+    height: 680px;
+    padding: 30px;
+    background-image: url(/Conteudos/roms\ background.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+.roms-gba .roms-titulo {
+    background-color: #000000c9;
+    color: #ffffff;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.roms-gba .roms-titulo  h1 {
+    margin-bottom: 10px;
+}
+
+.roms-gba .roms-titulo h1::after{
+    content: '';
+    width: 450px;
+    height: 3px;
+    background-color: #ffffff;
+    display: block;
+}
+
+.roms-gba .jogos {
+    width: 100%;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.roms-gba .jogos div {
+    width: 98%;
+    height: 390px;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 30px;
+    color: #ffffff;
+
+}
+.roms-gba .jogos img {
+    width: 98%;
+    margin-bottom: 20px;
+}
+
+.roms-gba .jogos div a {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 8px;
+    border: 2px solid yellow;
+
+ }
+ 
+ .roms-gba .jogos  div a:hover{
+     background-color: #ff0000;
+ }
+
+
+.detonado-div {
+    background-image: url(/Conteudos/pokemon\ detonados\ wallpaper.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 760px;
+    padding: 40px;
+}
+
+.detonado-titulo {
+    background-color: #000000c9;
+    color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.detonado-titulo h1 {
+    margin-bottom: 10px;
+}
+
+.detonado-titulo h1::after{
+    content: '';
+    width: 450px;
+    height: 3px;
+    background-color: #ffffff;
+    display: block;
+}
+
+.detonado-div .detonados{
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    gap: 20px;
+}
+
+.detonado-div .detonados div {
+    padding: 5px;
+    background-color: #000000cb;
+    border-radius: 10px;
+    color: #ffffff;
+    height: 480px;
+}
+
+.detonado-div .detonados img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.detonado-div .detonados p {
+    margin-bottom: 20px;
+}
+
+.detonado-div .detonados div a {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 8px;
+    border: 2px solid yellow;
+ }
+ 
+ .detonado-div .detonados div a:hover{
+     background-color: #ff0000;
+ }
+
+
+/* FOOTER 2*/
+.f2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    background-color: #000000;
+    text-align: center;
+
+}
+
+
+.f2 .f2-center{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.f2 .f2-center img {
+    width: 160px;
+    height: 160px;
+
+}
+
+
+
+/* END 2*/
+.end {
+    display: grid;
+    grid-template-columns: 1fr ;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-weight:500;
+}
