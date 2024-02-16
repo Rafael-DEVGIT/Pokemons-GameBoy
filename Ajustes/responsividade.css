@@ -160,9 +160,8 @@
     }
     
     .roms-gba {
-        height: 760px;
+        height: 790px;
         padding: 10px;
-        margin-bottom: 10px;
     }
     
     
@@ -232,8 +231,7 @@
 
     .detonado-div {
         width: 100%;
-        height: 1190px;
-        margin-bottom: 10px;
+        height: 1290px;
         padding:10px;
     }
     
@@ -286,7 +284,6 @@
     }
     
     .detonado-div .detonados p {
-        margin-bottom: 8px;
         font-size: 12px;
     }
 
