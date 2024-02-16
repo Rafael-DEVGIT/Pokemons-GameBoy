@@ -184,7 +184,7 @@ nav ul a:hover {
 }
 
 .containerproje .slide-container:nth-child(1) .slide{
-    background: url(/Conteudos/fire\ red.jpg);
+    background: url(../Conteudos/fire\ red.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -192,7 +192,7 @@ nav ul a:hover {
 }
 
 .containerproje .slide-container:nth-child(2) .slide{
-    background: url(/Conteudos/leaf\ gren.jpg);
+    background: url(../Conteudos/leaf\ gren.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -208,7 +208,7 @@ nav ul a:hover {
 }
 
 .containerproje .slide-container:nth-child(4) .slide{
-    background: url(/Conteudos/Saphira.jpg);
+    background: url(../Conteudos/Saphira.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -216,7 +216,7 @@ nav ul a:hover {
 }
 
 .containerproje .slide-container:nth-child(5) .slide{
-    background: url(/Conteudos/esmeralda.jpg);
+    background: url(../Conteudos/esmeralda.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -275,7 +275,7 @@ nav ul a:hover {
 
 
 .emuladores-div {
-    background-image: url(/Conteudos/emulador\ img.jpg);
+    background-image: url(../Conteudos/emulador\ img.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -327,7 +327,7 @@ nav ul a:hover {
     width: 100%;
     height: 680px;
     padding: 30px;
-    background-image: url(/Conteudos/roms\ background.jpg);
+    background-image: url(../Conteudos/roms\ background.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -388,7 +388,7 @@ nav ul a:hover {
 
 
 .detonado-div {
-    background-image: url(/Conteudos/pokemon\ detonados\ wallpaper.png);
+    background-image: url(../Conteudos/pokemon\ detonados\ wallpaper.png);
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
